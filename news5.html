@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="商程网络科技有限公司">
+    <meta name="description" content="欢迎登录商程网络科技有限公司">
+    <title>商程网络-APP开发</title>
+    <link rel="icon" href="img/21.jpg" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/news5.css" type="text/css">
+    <link rel="stylesheet" href="css/font.css" type="text/css">
+    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+  <!--头部内容-->
+<header>
+  <div class="header">
+      <div class="logo"> 
+       <img src="img/logo1.png">
+      </div>
+     <div class="sc"> 商程网络</div>
+
+     <div class="title">
+        <a href="solution.html" class="on">解决方案</a>
+        <a href="app.html">APP开发</a>
+        <a href="pservice.html">产品服务</a>
+        <a href="Classic.html">成功案例</a>
+        <a href="aboutus.html">关于商程</a>
+        <a href="index.html">公司首页</a>
+     </div>
+     <div class="clear"></div>
+  </div>
+  
+</header>
+<div class="clear"></div>
+
+
+<!--轮播图-->
+<div class="lb" id="lb">
+ <div class="pic" id="pic">
+   <img src="img/lb/lb0.jpg" width="100%" height="440px">
+   <img src="img/lb/lb1.jpg" width="100%" height="440px">
+   <img src="img/lb/lb2.jpg" width="100%" height="440px">
+   <img src="img/lb/lb3.jpg" width="100%" height="440px">
+   <img src="img/lb/lb4.jpg" width="100%" height="440px">
+ </div>
+
+   <div class="button">
+    <b class="on"></b>
+    <b></b>
+    <b></b>
+    <b></b>
+    <b></b>
+   </div>
+</div>
+<div class="clear"></div>
+
+<!--新闻标题-->
+<div class="news">
+    <div class="news-1">
+        <p class="bot">标题：</p>
+        <p>人脸检测算法设置彻底改变图像搜索</p>
+    </div>
+</div>
+<div class="clear"></div>
+
+<div class="rq">
+    
+    <p> 发表日期:<p class="mar">2019年-3-14</p></p>
+    <p class="marg">文章编辑：<p class="mar">易成</p></p>
+    <p class="marg">浏览次数: <p class="mar">195</p></p>
+
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+
+
+
+<!--文本内容-->
+<div class="text">早在2001年，两位计算机科学家Paul Viola和Michael Jones就引发了计算机人脸检测领域的一场革命。
+  经过多年的停滞，他们的突破是一种可以实时识别图像中的面部的算法。实际上，所谓的Viola-Jones算法非常快速和简单，
+  很快就被内置到标准的傻瓜相机中。<br />
+  <br />
+  他们的部分诀窍是忽略面部识别中更加困难的问题，而只关注检测。他们也只关注从正面看的面孔，忽略了从一个角度看到的任何面孔。
+  鉴于这些界限，他们意识到鼻梁通常形成一条垂直线，比附近的眼窝更亮。他们还注意到眼​​睛经常处于阴影中，因此形成了较暗的水平带。
+  <br />
+  <br />
+  因此，Viola和Jones构建了一种算法，该算法首先查找可能是鼻子的图像中的垂直亮带，然后查找可能是眼睛的水平暗带，然后查找与脸
+  相关的其他一般模式。<br />
+  <br />
+  由他们自己检测，这些特征都没有强烈暗示面部。但是当它们在级联中一个接一个地被检测到时，结果是图像中的面部的良好指示。因此，
+  这个过程的名称：探测器级联。由于这些测试都很简单，因此生成的算法可以快速实时运行。<br />
+  <br />
+  但是，虽然Viola-Jones算法对于从正面看到的面部是一种启示，但它无法从任何其他角度精确地发现面部。这严重限制了它如何用于面部搜索
+  引擎。<br />
+  <br />
+  这就是雅虎对此问题感兴趣的原因。今天，加利福尼亚州雅虎实验室的Sachin Farfade和Mohammad Saberian以及斯坦福大学附近的Li-Jia 
+  Li，揭示了一种解决问题的新方法，即使在部分遮挡的情况下也可以在某个角度发现面部问题。他们说他们的新方法比其他方法更简单，
+  但却达到了最先进的性能。<br />
+  <br />
+  Farfade和co使用一种根本不同的方法来构建他们的模型。他们利用近年来在一种称为深度卷积神经网络的机器学习上取得的进步。我们的想
+  法是使用大量带注释的示例数据库来训练多层神经网络，在这种情况下，从多个角度拍摄人脸照片。<br />
+  <br />
+  为此，Farfade和co创建了一个包含200,000张图像的数据库，其中包括各种角度和方向的面部以及另外2000万张没有面部的图像。然后他
+  们在50,000次迭代中以128个图像批量训练他们的神经网络。<br />
+  <br />
+  结果是一种算法，即使在部分遮挡的情况下也可以从各种角度发现面部。它可以非常精确地在同一图像中发现许多面部。<br />
+  <br />
+  该团队称这种方法为Deep Dense Face Detector，并称它与其他算法相比较。&ldquo;我们使用其他基于深度学习的方法评估了所提出的
+  方法，并表明我们的方法可以获得更快，更准确的结果，&rdquo;他们说。<br />
+  <br />
+  更重要的是，他们的算法在颠倒时能够更好地识别面部，其他方法还没有完善。并且他们说，使用包含更多颠倒面的数据集可以做得更好。
+  &ldquo;我们计划使用更好的采样策略和更复杂的数据增强技术，以进一步提高所提出的检测遮挡和旋转面部方法的性能。&rdquo;<br />
+  <br />
+  这是一项有趣的工作，展示了人脸检测的快速进展。深度卷积神经网络技术本身只有几年的历史，已经在对象和人脸识别方面取得了重大进展。
+  <br />
+  <br />
+  这种算法的巨大希望在于图像搜索。目前，可以直接搜索在特定地点或特定时间拍摄的图像。但很难找到特定人物拍摄的照片。这是朝这个方
+  向迈出的一步。在不远的将来，这种能力不可避免地会伴随我们。<br />
+  <br />
+  当它到来时，世界将变得更小。这不仅仅是将来可以搜索的图片，而是数字化图像的整个历史，包括大量的视频和CCTV镜头。无论如何，
+  这将成为一股强大的力量。</div>
+  
+  
+<div class="clear"></div>
+
+<!--切换-->
+<div class="boot">
+   <a href="index.html">尾页</a>
+   <a href="index.html">首页</a>
+   <a href="news6.html" class="xy">下一篇</a>
+   <a href="news4.html">上一篇</a>
+</div>
+
+
+<!--新闻动态-->
+<div class="cp">
+        <a href="#">新闻动态</a><p>NEWS</p>
+        </div>
+ 
+      <div class="news">
+        <div class="news-left">
+         <ul>
+           <li>
+            <a href="#">软件工业维护企业资产管理...</a>
+           </li>
+            <span class="size">2019-03-8</span>
+          
+           <li>
+           <a href="#">智能系统AI增强了CRM软件系统...</a>
+           </li>
+             <span class="size">2019-03-8</span>
+           
+           <li>
+           <a href="#">软件开发公司和开发沟通的10个技巧...</a>
+           </li>
+            <span class="size">2019-03-8</span>
+           
+           <li>
+           <a href="#">业高效率软件开发平台即服务（PaaS）</a>
+           </li>
+             <span class="size">2019-03-8</span>
+            
+           <li>
+           <a href="#">人脸检测算法设置彻底改变图像搜索...</a>
+           </li>
+            <span class="size">2019-03-8</span>
+           
+           <li>
+           <a href="#">税收改革对软件公司和技术意味着什么...</a>
+           </li>
+            <span class="size">2019-03-8</span>
+           
+           <li>
+            <a href="#">文本可视化：软件开发公司医疗记录系统...</a>
+           </li>
+            <span class="size">2019-03-8</span>
+            
+           <li>
+             <a href="#">文本可视化：软件开发公司建筑节能系统...</a>
+           </li>
+            <span class="size">2019-03-8</span>
+      </ul>    
+    </div>
+           <div class="news-right"><a href="news1.html"><img src="img/AI.jpg"></a></div>
+
+  <div class="clear"></div>
+ </div>
+ 
+ 
+ 
+  <!--底部-->
+  <footer>
+    <div class="lantu">
+    <p>
+       <marquee behavior="scroll" direction="left" scrollamount="10" scrolldelay="10" 
+       onMouseMove="stop()" onmouseout="start()">商程网络开发范围：
+       (App定制开发)&nbsp;(微信小程序)&nbsp;(公众号搭建)&nbsp;(OA系统)&nbsp;(erp系统)&nbsp;(官网定制);
+       &nbsp;&nbsp;&nbsp;&nbsp;客户至上：说出您的需求，剩下的交给我们!&nbsp;&nbsp;官方咨询：17601446710同微信
+    </marquee>
+       </p>
+    </div>
+ 
+    <div class="connect"> 
+     <P class="bb">友情连接:</P>
+     <a href="http://www.shangchengnet.cn" class="last">领领购</a>
+     <a href="http://www.baidu.com" >领领购</a>
+     <a href="http://www.kugou.com">领领购</a>
+     <a href="#">领领购</a>
+     <a href="http://19.kssina.com/">苏州壹玖</a>
+     <a href="http://www.giant.com.cn/">捷安特（GIANT）</a>
+    </div>
+ 
+   <div class="line"></div>
+ 
+ 
+   <div class="Bottom-text">
+     <div class="botm-1">
+      <p>
+      Copyright@ 2015-2019 
+      固镇商程网络科技有限公司版权所有  苏州软件公司 | 软件开发公司 | App开发公司
+      </p>
+     </div>
+     <div class="botm-2">
+     
+       <p> 
+         <span><img src="img/guo.png"></span>
+         <em>皖ICP备190014994</em>
+         <i><img src="img/pic.gif"></i>
+       </p>
+     </div>
+ </footer>
+</body>
+</html>
